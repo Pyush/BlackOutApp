@@ -1,0 +1,88 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Color"></Label>
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="onNavBtnTap()"></NavigationButton>
+</ActionBar>
+
+<GridLayout>
+    <ScrollView class="page">
+        <StackLayout>
+
+
+            <GridLayout columns="auto,auto" rows="auto,auto,auto">
+
+                <Label class="img-circle img-circle-border" width="40%" height="25%" text="L001 \n Gel Name" row="0"
+                       col="0"
+                       backgroundColor="#FD6A7D" margin="50px" padding="50px"></Label>
+                <Label class="img-circle img-circle-border" width="40%" height="25%" text="L002 \n Gel Name" row="0"
+                       col="1"
+                       backgroundColor="#FDA56F" margin="50px" padding="50px"></Label>
+
+                <Label class="img-circle img-circle-border" width="40%" height="25%" text="L003 \n Gel Name" row="1"
+                       col="0"
+                       backgroundColor="#FFCD89" margin="50px" padding="50px"></Label>
+                <Label class="img-circle img-circle-border" width="40%" height="25%" text="L004 \n Gel Name" row="1"
+                       col="1"
+                       backgroundColor="#B851FB" margin="50px" padding="50px"></Label>
+
+                <Label class="img-circle img-circle-border" width="40%" height="25%" text="L005 \n Gel Name" row="2"
+                       col="0"
+                       backgroundColor="#FDA759" margin="50px" padding="50px"></Label>
+                <Label class="img-circle img-circle-border" width="40%" height="25%" text="L006 \n Gel Name" row="2"
+                       col="1"
+                       backgroundColor="#FC3B2F" margin="50px" padding="50px"></Label>
+
+            </GridLayout>
+
+            <StackLayout orientation="horizontal" width="100%" height="60">
+                <Button text="Color" width="33%" height="50" backgroundColor="black" color="white"></Button>
+                <Button text="Hue" width="33%" height="50" backgroundColor="black" color="white"></Button>
+                <Button text="Gel" width="33%" height="50" backgroundColor="black" color="white"></Button>
+            </StackLayout>
+
+            <StackLayout class="hr-light m-10"></StackLayout>
+
+            <StackLayout orientation="horizontal" width="100%" height="60">
+                <Label class="text-left" text="Repeat" width="33%" height="50" color="white"></Label>
+                <Label class="text-center" text="Color Temp" width="33%" height="50" color="white"></Label>
+                <Label class="text-right" text="3200K" width="33%" height="50" color="white"></Label>
+            </StackLayout>
+            <Slider minValue="1" maxValue="100" value="50" class="slider"></Slider>
+
+            <StackLayout class="hr-light m-10"></StackLayout>
+
+            <StackLayout orientation="horizontal" width="100%" height="60">
+                <Label class="text-left" text="Repeat" width="33%" height="50" color="white"></Label>
+                <Label class="text-center" text="Red" width="33%" height="50" color="white"></Label>
+                <Label class="text-right" text="100" width="33%" height="50" color="white"></Label>
+            </StackLayout>
+            <Slider minValue="1" maxValue="100" value="50" class="slider"></Slider>
+
+            <StackLayout class="hr-light m-10"></StackLayout>
+
+            <StackLayout orientation="horizontal" width="100%" height="60">
+                <Label class="text-left" text="Repeat" width="33%" height="50" color="white"></Label>
+                <Label class="text-center" text="Green" width="33%" height="50" color="white"></Label>
+                <Label class="text-right" text="100" width="33%" height="50" color="white"></Label>
+            </StackLayout>
+            <Slider minValue="1" maxValue="100" value="50" class="slider"></Slider>
+
+            <StackLayout class="hr-light m-10"></StackLayout>
+
+            <StackLayout orientation="horizontal" width="100%" height="60">
+                <Label class="text-left" text="Repeat" width="33%" height="50" color="white"></Label>
+                <Label class="text-center" text="Blue" width="33%" height="50" color="white"></Label>
+                <Label class="text-right" text="100" width="33%" height="50" color="white"></Label>
+            </StackLayout>
+            <Slider minValue="1" maxValue="100" value="50" class="slider"></Slider>
+
+            <StackLayout class="hr-light m-10"></StackLayout>
+
+            <StackLayout orientation="horizontal" width="100%" height="60">
+                <Button text="Off" width="33%" height="50" backgroundColor="black" color="white"></Button>
+                <Button text="Auto" width="33%" height="50" backgroundColor="black" color="white"></Button>
+                <Button text="Full" width="33%" height="50" backgroundColor="black" color="white"></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

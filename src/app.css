@@ -1,0 +1,58 @@
+/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. For a full list of class names in the theme
+refer to http://docs.nativescript.org/ui/theme.
+*/
+/*@import '~nativescript-theme-core/css/core.light.css';*/
+@import '~nativescript-theme-core/css/core.dark.css';
+
+/*
+@import '~nativescript-theme-core/css/aqua.css';
+@import '~nativescript-theme-core/css/blue.css';
+@import '~nativescript-theme-core/css/brown.css';
+@import '~nativescript-theme-core/css/forest.css';
+@import '~nativescript-theme-core/css/grey.css';
+@import '~nativescript-theme-core/css/lemon.css';
+@import '~nativescript-theme-core/css/lime.css';
+@import '~nativescript-theme-core/css/orange.css';
+@import '~nativescript-theme-core/css/purple.css';
+@import '~nativescript-theme-core/css/ruby.css';
+@import '~nativescript-theme-core/css/sky.css';*/
+
+/*
+For example, the following CSS rule changes the font size of all UI
+components that have the btn class name.
+*/
+
+.btn {
+    font-size: 18px;
+}
+
+.page {
+    flex-direction: column;
+}
+.form {
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-grow: 2;
+    vertical-align: top;
+}
+
+.labelError {
+    font-size: 10px;
+    color: #dc3545;
+}
+
+
+.img-circle-border {
+    border: 2px black;
+}
+
+
+

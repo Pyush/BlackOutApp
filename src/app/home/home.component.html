@@ -1,0 +1,46 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<GridLayout>
+    <ScrollView class="page">
+
+        <StackLayout>
+            <StackLayout class="form" [formGroup]="oForm">
+                <StackLayout class="input-field">
+                    <TextField hint="First name" background="white" color="black" formControlName="firstName"
+                               id="firstName" #firstName
+                               required></TextField>
+                    <StackLayout *ngIf="submitted && formO?.firstName?.errors">
+                        <label class="labelError" *ngIf="formO?.firstName?.errors.required"
+                               text="First name required"></label>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout class="input-field">
+                    <TextField hint="Last name" background="white" color="black" formControlName="lastName" id="lastName" #lastName required></TextField>
+                    <StackLayout *ngIf="submitted && formO?.lastName?.errors">
+                        <label class="labelError" *ngIf="formO?.lastName?.errors.required"
+                               text="Last name required"></label>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout class="input-field">
+                    <TextField hint="Organization" background="white" color="black" formControlName="organization" id="organization" #organization
+                               required></TextField>
+                    <StackLayout *ngIf="submitted && formO?.organization?.errors">
+                        <label class="labelError" *ngIf="formO?.organization?.errors.required"
+                               text="Organization required"></label>
+                    </StackLayout>
+                </StackLayout>
+
+                <Button text="Submit" (tap)="submit()" class="btn btn-primary btn-active icon"></Button>
+
+                <Button text="User Data" [nsRouterLink]="['/user']" class="btn btn-primary btn-active"></Button>
+
+                <Button text="Color" [nsRouterLink]="['/colorui']" class="btn btn-primary btn-active"></Button>
+
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

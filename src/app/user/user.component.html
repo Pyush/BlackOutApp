@@ -1,0 +1,23 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Users"></Label>
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="onNavBtnTap()"></NavigationButton>
+</ActionBar>
+
+<FlexboxLayout class="page">
+
+    <ListView class="list-group" [items]="users" (itemTap)="onItemTap($event)">
+        <ng-template let-user="item">
+            <FlexboxLayout flexDirection="column" class="list-group-item">
+                <StackLayout>
+                    <Label class="h2" [text]="user.firstname +' '+ user.lastname" class="list-group-item-heading" verticalAlignment="center"
+                           textWrap="true"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label [text]="user.organization" class="list-group-item-heading" verticalAlignment="center"
+                           textWrap="true"></Label>
+                </StackLayout>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+
+</FlexboxLayout>
